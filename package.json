@@ -1,0 +1,29 @@
+{
+    "private": true,
+    "name": "nr-app-kpis",
+    "version": "0.1.0",
+    "scripts": {
+        "start": "nr1 nerdpack:serve",
+        "test": "exit 0"
+    },
+    "nr1": {
+        "uuid": "9f97d4f5-78dc-4a29-98c6-aba1785c92c0"
+    },
+    "dependencies": {
+        "@newrelic/nr1-community": "^1.2.0",
+        "install": "^0.13.0",
+        "npm": "^10.4.0",
+        "nr1": "^0.1.0",
+        "prop-types": "15.7.2",
+        "react": "17.0.2",
+        "react-dom": "17.0.2",
+        "rechart": "^0.0.1",
+        "recharts": "^2.11.0",
+        "regenerator-runtime": "^0.14.1"
+    },
+    "browserslist": [
+        "last 2 versions",
+        "not ie < 11",
+        "not dead"
+    ]
+}
