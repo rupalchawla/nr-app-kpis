@@ -12,11 +12,15 @@ import {
   Button,
 } from "nr1";
 import { timeRangeToNrql } from "@newrelic/nr1-community";
-import AddAppsDrawer from "../components/AddAppsDrawer";
+import ManageApps from "../components/ManageApps";
 
 // https://docs.newrelic.com/docs/new-relic-programmable-platform-introduction
 
 function HomeNerdlet() {
+
+  function appAddedCallback() {
+    console.log("App added");
+  }
   return (
     <div>
       <PlatformStateContext.Consumer>
@@ -27,7 +31,7 @@ function HomeNerdlet() {
           console.log(since);
         }}
       </PlatformStateContext.Consumer>
-      <AddAppsDrawer />
+      <ManageApps callback={appAddedCallback}/>
     </div>
   );
 }
